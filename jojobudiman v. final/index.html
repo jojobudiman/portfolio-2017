@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width:device-width,initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+	<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<title>JB - Portfolio</title>
+</head>
+<!--
+JB - Portfolio (Jonathan Budiman - 00000021637)
+Berikut ini merupakan website portfolio saya dengan colortheme black and white. Tema yang saya pilih merupakan warna hitam dan putih secara
+mayoritas karena dalam kegelapan pasti ada keterangan, dalam kehidupan sehari-hari, apa yang telah kita jalani bisa pemuh dengan realita yang
+cukup kejam maupun yang ceria. Folder img adalah 100% hasil desain dan pure photography maupun animasi KECUALI background-video karena belum bisa
+3D..
+
+Sources :
+https://estelle.github.io/cssdeepdive/flexbox.html#slide1
+https://daneden.github.io/animate.css/
+https://github.com/peachananr/onepage-scroll
+https://github.com/IanLunn/Hover/blob/master/README.md#hovercss
+https://github.com/wilddeer/stickyfill
+NOTE : hover.css hanya dipakai di section akhir, dan navbar sebenarnya tidak diperlukan sejak terdapat onepage scroll.
+			 Karena skill JS saya belum sampai fixed scroll dalam setiap section, saya biarkan di halaman pertama.-->
+<body>
+	<div class="preloader">
+		<div id="loading">
+			<img src="img/preloader.gif" width="100" height="100">
+		</div>
+	</div>
+	<div class="index">
+		<div class="navbar-container">
+			<nav class="navbar-menu">
+				<ul>
+					<li><a href="#jonathan"><span class="intro">Hello</span></a></li>
+					<li><a href="#about"><span class="desc">About</span></a></li>
+					<li><a href="#works"><span class="work">Works</span></a></li>
+					<li><a href="#contact"><span class="me">Contact</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	<!--INTRODUCTION SECTION-->
+	<section id="jonathan">
+			<div class="video-bg">
+				<video preload="auto" autoplay="true" loop="true" muted="muted">
+					<source src="img/retrogrid.mp4">
+				</video>
+			</div>
+			<div class="logo-container animated rollIn" style="animation-delay: 0.1s;">
+				<a href="#jonathan"><img class="logo-container" src="img/jobu.png" width="64" height="64"></a>
+			</div>
+			<div class="jobu">
+				<div class="jobu-container">
+					<div class="name animated fadeInDown" style="animation-delay: 0.2s;">
+						<h1><center>JONATHAN BUDIMAN</center></h1>
+					</div>
+					<div class="name animated fadeInUp" style="animation-delay: 0.6s;">
+						<h2>Web</h2>
+					<div class="animator animated fadeInup" style="animation-delay: 0.6s;">
+						<div><h2>Designer</h2></div>
+						<div><h2>Developer</h2></div>
+						<!--<div><h2>Creator</h2></div>
+						<div><h2>Originator</h2></div>
+						<div><h2>Master</h2></div>
+						<div><h2>Student</h2></div>-->
+					</div>
+				</div>
+					<div class="scrolldown animated jackInTheBox" style="animation-delay: 1s;">
+						<a href="#about" id="scroll-down"><span></span>Scroll Down</a>
+						<div class="hover-anim"></div>
+			  	</div>
+				</div>
+			</div>
+	 </section>
+<!--ABOUT SECTION-->
+	 <section id="about">
+	 		<div class="jobu-works">
+	 			<div class="jobu-works-container">
+	 				<h1 class="cck-line">About</h1>
+	 				<h2 class="約">私について</h2>
+	 				<div class="main-quote">
+	 				<h1 class="お前">私を知っているべきだと思います。</h1>
+	 				</div>
+	 				<div class="quote animated flipInX">
+	 					<h3>I think</h3>
+	 				</div>
+	 				<div class="quote-1 animated flipInY">
+	 					<h2>it is <b>BETTER</b></h2>
+	 				</div>
+	 				<div class="quote-2 animated zoomInLeft">
+	 					<h1>to &nbsp;&nbsp;&nbsp;<b>K N O W &nbsp;M E .</b></h1>
+	 				</div>
+	 				<div class="f33ls">
+	 					<video width="340" height="340" preload="auto" autoplay="true" loop="true" muted="muted">
+	 						<source src="img/emotions.mp4">
+	 					</video>
+	 				</div>
+	 				<!--<h3>
+		 					<span class="animated fadeinLeft style="animation-delay: 0.5s;">I </span>
+		 					<span class="animated fadeinLeft style="animation-delay: 0.6s;">think</span>
+		 				</h3>
+		 				<h2>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 0.8s;">it </span>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 0.9s;">is </span>
+		 					<span class="animated flipInX style="animation-delay: 1s;,font-weight: 700;">B</span>
+		 					<span class="animated flipInY style="animation-delay: 1.1s;,font-weight: 700;">E</span>
+		 					<span class="animated flipInX style="animation-delay: 1.2s;,font-weight: 700;">T</span>
+		 					<span class="animated flipInY style="animation-delay: 1.3s;,font-weight: 700;">T</span>
+		 					<span class="animated flipInX style="animation-delay: 1.4s;,font-weight: 700;">E</span>
+		 					<span class="animated flipInY style="animation-delay: 1.5s;,font-weight: 700;">R</span>
+		 				</h2>
+		 				<h1>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 1.8s;">to </span>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 1.8s;">K</span>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 1.8s;">N</span>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 1.8s;">O</span>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 1.8s;">W </span>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 1.8s;">M</span>
+		 					<span class="animated rotateInDownLeft style="animation-delay: 1.8s;">E</span>
+		 				</h1>-->
+	 				<div class="who-am-i-bruh">
+	 					<h3>Who am I ? ¯\_(ツ)_/¯</h3>
+	 					<h4>A Chinese based <a href="#" class="indonesia"><b>Indonesia</b></a> designer and developer who likes to creating simple digital experiences and animations for people. I am focused on digital design, photography, visual arts, animations, and user interfaces.<br><br>
+	 						Currently studying at Pelita Harapan University<br>as a sophomore student.<br>
+	 						I am currently available for freelance projects.<br>
+	 						Feel free to <a href="#contact" class="contact-btn"><b>contact</b></a> me or to download my <a href="others/jb-resume.pdf" class="download"><b>resume</b></a><br>if you need more information.
+	 					</h4>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</section>
+	 	<!--WORKS SECTION-->
+	 	<section id="works">		
+	 		<div class="inventions">
+	 			<div class="inventions-container">
+	 			<h1 class="cck-line">Works</h1>
+	 			<h2 class="作品"">アトワク</h2>
+	 			<div class="some-works animated fadeInUp">
+	 			<h1>Behold the power of my aesthetic works.<br>
+	 				More collaborated and individual projects coming soon!<br></h1>
+	 			</div>
+	 		<div class="img-grid">
+	 				<div class="img-overlay">
+	 					<img class="sistech img-popup-overlay" src="img/sistech-uph.jpg" width="600" height="338">
+	 					<img class="indoplus img-popup-overlay" src="img/indoplus.jpg" width="165" height="165">
+	 					<img class="php img-popup-overlay" src="img/PHP.jpg" width="165" height="165">
+	 					<img class="falcon img-popup-overlay" src="img/falcon-project.jpg" width="230" height="338">
+	 					<img class="crateru img-popup-overlay" src="img/Cratera.jpg" width="165" height="165">
+	 					<img class="karui img-popup-overlay" src="img/軽井沢.jpg" width="420" height="143">
+	 				</div>
+	 				<!--<div class="img-popup-overlay">
+	 					<article class="popup-content">
+	 						<h3 class="popup-title">Test</h3>
+	 						<p>I'm a little teapot!</p>
+	 						<a href="#" class="close-btn">x</a>
+	 					</article>
+	 						<a class='lightbox-overlay' href='#'></a>
+	 				</div>-->
+
+	 		</div>
+			</div>
+		</div>
+		</section>
+		<section id="contact">
+			<div class="get-in-touch">
+				<div class="git-container">
+					<h1 class="mnk-line">GET IN TOUCH</h1>
+	 				<h2 class="コンタクト">お気軽にお問い合わせください</h2>
+	 					<div class="contact-details">
+	 						<ul>
+	 							<li><a href="http://facebook.com/jobudiman" class="hvr-sweep-to-left" target="blank"><b>Facebook</b><span>@jojobudiman</span></a></li>
+	 							<li><a href="http://twitter.com/jojobudiman__" class="hvr-sweep-to-left" target="blank"><b>Twitter</b><span>@jojobudiman</span></a></li>
+	 							<li><a href="http://behance.net/jojobudiman" class="hvr-sweep-to-left" target="blank"><b>Behance</b><span>@jojobudiman</span></a></li>
+	 							<li><a href="mailto:jojobudiman@hotmail.com" class="hvr-sweep-to-left" target="blank"><div style="margin-left: -50px;""><b>E-mail</b><span>jojobudiman@hotmail.com</span></div></a></li>
+	 						</ul>
+						</div>
+						<!--<div class="anakbaik animated rollIn" style="animation-delay: 2.5s;">
+					<img src="img/color_jobu.jpg" width="274" height="321">
+						</div>-->
+						<div class="form-git">
+							<div class="contact-form">
+								<form>
+									<input type="text" name="name" id="name" placeholder="Name">
+									<input type="email" name="email" id="email" placeholder="Email">
+									<textarea name="message" rows="3" cols="3" id="message" placeholder="Message"></textarea>
+									<div class="submit-button">
+										<a href="#"><span></span>Submit</a>
+										<div class="submit-anim"></div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.onepage-scroll.js"></script>
+	<script src="js/script.js"></script>
+	<script type="js/stickyfill.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</body>
+</html>

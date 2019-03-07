@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800) format("truetype");
+
+    font-family: "Playfair Display";
+    src: url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700) format("truetype");
+}
+
+.home .navbar{
+	visibility: hidden;
+}
+
+.logo {
+  color: #ffffff;
+  top: 50px;
+  left: 50px;
+  position: fixed;
+}
+
+.bg-animate {
+	width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: fixed;
+  background: url("img/bg.jpg") no-repeat bottom right;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.username-nav-animation {
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+}
+
+header#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	z-index: 99;
+	list-style-type: none;
+}
+
+header#header ul li a {
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+  color: #ffffff;
+}
+header#header ul li a:hover {
+  opacity: 70%;
+}
+
+header#header.nibba {
+  color: black;
+}
+
+header#header.nibba ul li a {
+  color: black;
+} 
+
+.howru p span.username-display {
+	font-family:"Playfair Display", serif;
+	font-weight: 700;
+	font-style: italic;
+	display: inline-block;
+}
+
+.animate {
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.italic {
+	font-family: "Playfair Display", serif;  
+  font-style: italic;
+	font-weight: 700;  
+	display: inline-block;
+}
+
+.your-name {
+	width: 100%;
+  position: fixed;
+  bottom: 30%;
+  left: 50px;
+  display: block;
+}
+
+.howru {
+	width: 100%;
+	left: 50px;
+  bottom: 10%;
+  visibility: hidden;
+  position: fixed;
+}
+
+.howru p span.username-display:first-letter {
+	text-transform: uppercase;
+}
+
+.visitor-name {
+	font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+
+.lego-button {
+	padding: 10px 27px;
+  margin-bottom: 15px;
+  line-height: 28px;
+  font-size: 12px;
+  border-radius: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.lego-button2 {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.lego-button2:hover {
+  background: white;
+  color: black;
+}
+
+.legobutton-settings {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden!important;
+}
+
+.legobutton-settings span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+.legobutton-settings span:before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  color: black;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 0;
+}
+.legobutton-settings:hover span {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.legobutton-settings:hover span:before {
+  opacity: 100%;
+}
